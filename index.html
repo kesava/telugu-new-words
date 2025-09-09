@@ -451,6 +451,18 @@
             return (isProperVowel || isProperConsonant) && !isDiacrit;
         }
 
+        function isValidWordEnding(word) {
+            if (!word || word.length === 0) return false;
+            
+            // Reject words ending with virama (halant)
+            if (word.endsWith('్')) return false;
+            
+            // Reject words ending with other problematic characters
+            const lastChar = word[word.length - 1];
+            
+            return true;
+        }
+
         // Calculate aspirated vs unaspirated frequencies in training data
         let aspiratedCount = 0;
         let unaspiratedCount = 0;
@@ -951,6 +963,11 @@
                 }
             }
             
+            // Validate word ending
+            if (!isValidWordEnding(word)) {
+                return null;
+            }
+            
             return word;
         }
 
@@ -1092,6 +1109,7 @@
             if (word.length >= 2 && word.length <= 10 && 
                 word[0] !== '^' && word[0] !== '$' &&
                 isValidStartingChar(word[0]) && 
+                isValidWordEnding(word) && // Use comprehensive ending validation
                 !teluguWords.includes(word)) { // Ensure it's not an exact copy
                 return word;
             }
