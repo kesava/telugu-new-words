@@ -283,7 +283,87 @@
             </div>
         </div>
         
-        <div class="export-section linguistic" style="display:block;">
+
+        
+<div class="generated-words" id="generatedWords"></div>
+
+<div style="background: #f8f9fa; border: 1px solid #dee2e6; border-radius: 8px; padding: 24px; margin-bottom: 28px; font-size: 0.95em; line-height: 1.7; color: #2c3e50;">
+
+  <h3 style="margin: 0 0 18px; color: #2c3e50; border-bottom: 1px solid #dee2e6; padding-bottom: 8px;">
+    Telugu Word Generator – Technical & Simple Explanation
+  </h3>
+
+  <div style="display: flex; gap: 30px; flex-wrap: wrap;">
+    
+    <!-- Technical Terms Column -->
+    <div style="flex: 1; min-width: 300px;">
+      <h4 style="margin: 18px 0 12px; color: #34495e;">Technical Terms</h4>
+
+      <h5 style="margin: 14px 0 8px;">1. Statistical Pattern Learning (Markov Chains)</h5>
+      <ul style="margin-left: 22px;">
+        <li><strong>Second-Order Chain:</strong> Learns bigram (2-character) patterns.</li>
+        <li><strong>Third-Order Chain:</strong> Learns trigram (3-character) patterns.</li>
+        <li><strong>Probability Mapping:</strong> Captures transition probabilities.</li>
+        <li><strong>Laplace Smoothing:</strong> Handles unseen character combos.</li>
+      </ul>
+
+      <h5 style="margin: 14px 0 8px;">2. Neural Network Quality Assessment</h5>
+      <ul style="margin-left: 22px;">
+        <li><strong>Bidirectional LSTM:</strong> Analyzes sequences in both directions.</li>
+        <li><strong>Training Dataset:</strong> Real words vs. corrupted words.</li>
+        <li><strong>Quality Scoring:</strong> Scores outputs from 0–100% authenticity.</li>
+        <li><strong>Real-time Training:</strong> 10-epoch cycles with live metrics.</li>
+      </ul>
+
+      <h5 style="margin: 14px 0 8px;">3. Intelligent Word Generation</h5>
+      <ul style="margin-left: 22px;">
+        <li><strong>Multi-tier Filtering:</strong> Accepts >60% quality, fallback 40–60%.</li>
+        <li><strong>Probabilistic Sampling:</strong> Weighted random selection.</li>
+        <li><strong>Boundary Handling:</strong> Uses markers for clean word starts/ends.</li>
+      </ul>
+
+      <h5 style="margin: 14px 0 8px;">Output</h5>
+      <p>Produces linguistically plausible Telugu-like words that follow phonological rules.</p>
+    </div>
+
+    <!-- Simple Explanation Column -->
+    <div style="flex: 1; min-width: 300px;">
+      <h4 style="margin: 18px 0 12px; color: #34495e;">Simple Explanation</h4>
+
+      <h5 style="margin: 14px 0 8px;">1. Learning Patterns</h5>
+      <ul style="margin-left: 22px;">
+        <li>Looks at 2 letters at a time (like <em>ba–ra</em>).</li>
+        <li>Looks at 3 letters at a time (like <em>cha–la–mu</em>).</li>
+        <li>Figures out which letters usually follow each other.</li>
+        <li>Can guess when it sees new or rare letter combos.</li>
+      </ul>
+
+      <h5 style="margin: 14px 0 8px;">2. Checking Quality</h5>
+      <ul style="margin-left: 22px;">
+        <li>A smart program (neural network) checks the word both ways.</li>
+        <li>It was trained with real words (good) and scrambled ones (bad).</li>
+        <li>Each word gets a score from <strong>0–100%</strong>.</li>
+        <li>The system keeps practicing in short rounds to improve.</li>
+      </ul>
+
+      <h5 style="margin: 14px 0 8px;">3. Generating Words</h5>
+      <ul style="margin-left: 22px;">
+        <li>Words above <strong>60%</strong> are accepted right away.</li>
+        <li>Words between 40–60% are “maybes.”</li>
+        <li>It adds randomness but still follows learned rules.</li>
+        <li>Marks help words start and end neatly.</li>
+      </ul>
+
+      <h5 style="margin: 14px 0 8px;">Final Output</h5>
+      <p>Creates new Telugu-like words that sound natural and follow real patterns.</p>
+    </div>
+
+  </div>
+</div>
+
+
+
+        <div class="export-section" style="display:block;">
             <h3>📊 Linguistic Analysis</h3>
             <div style="display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 15px; font-size: 0.9em;">
                 <div>
@@ -303,42 +383,6 @@
                     <div id="startingPatterns" style="margin-top: 5px; font-family: monospace;"></div>
                 </div>
             </div>
-        </div>
-        
-        <div class="generated-words" id="generatedWords"></div>
-
-
-         <div style="background: #f8f9fa; border: 1px solid #dee2e6; border-radius: 6px; padding: 20px; margin-bottom: 25px; font-size: 0.9em; line-height: 1.6; color: #2c3e50;">            
-            <h3 style="margin-top: 0; margin-bottom: 15px; color: #2c3e50; border-bottom: 1px solid #dee2e6; padding-bottom: 8px;">Telugu Word Generator - Technical Documentation</h3>
-            
-            <h4 style="margin-top: 20px; margin-bottom: 10px; color: #34495e;">Architecture Overview</h4>
-            <p>This system implements a hybrid approach combining statistical pattern learning with neural network filtering to generate linguistically plausible Telugu words.</p>
-            
-            <h4 style="margin-top: 20px; margin-bottom: 10px; color: #34495e;">1. Statistical Pattern Learning (Markov Chains)</h4>
-            <ul style="margin-left: 20px; line-height: 1.7;">
-                <li><strong>Second-Order Chain:</strong> Analyzes bigram patterns (2-character sequences) from real Telugu vocabulary</li>
-                <li><strong>Third-Order Chain:</strong> Analyzes trigram patterns (3-character sequences) for enhanced contextual understanding</li>
-                <li><strong>Probability Mapping:</strong> Learns transitional probabilities between character sequences</li>
-                <li><strong>Laplace Smoothing:</strong> Handles unseen character combinations gracefully</li>
-            </ul>
-            
-            <h4 style="margin-top: 20px; margin-bottom: 10px; color: #34495e;">2. Neural Network Quality Assessment</h4>
-            <ul style="margin-left: 20px; line-height: 1.7;">
-                <li><strong>Bidirectional LSTM:</strong> Deep learning model analyzing Telugu character patterns in both directions</li>
-                <li><strong>Training Dataset:</strong> Real Telugu words (positive examples) versus corrupted/shuffled words (negative examples)</li>
-                <li><strong>Quality Scoring:</strong> Evaluates generated words on a 0-100% authenticity scale</li>
-                <li><strong>Real-time Training:</strong> 10-epoch training cycle with live progress and performance metrics</li>
-            </ul>
-            
-            <h4 style="margin-top: 20px; margin-bottom: 10px; color: #34495e;">3. Intelligent Word Generation</h4>
-            <ul style="margin-left: 20px; line-height: 1.7;">
-                <li><strong>Multi-tier Filtering:</strong> Primary tier accepts words with 60%+ quality scores, fallback tier accepts 40%+ quality</li>
-                <li><strong>Probabilistic Sampling:</strong> Weighted random selection based on learned statistical patterns</li>
-                <li><strong>Boundary Handling:</strong> Proper management of word start/end transitions using special boundary markers</li>
-            </ul>
-            
-            <h4 style="margin-top: 20px; margin-bottom: 10px; color: #34495e;">Output</h4>
-            <p>The system generates linguistically plausible Telugu-like words that adhere to authentic character patterns and phonological rules derived from the training corpus.</p>
         </div>
     </div>
 
